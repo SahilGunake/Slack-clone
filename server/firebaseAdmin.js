@@ -1,5 +1,4 @@
 import admin from 'firebase-admin';
-import serviceAccount from './serviceAccountKey.json' with { type: "json" };
 
 const config = {
   credential: admin.credential.cert({
@@ -13,9 +12,7 @@ const config = {
 
 // Initialize Firebase Admin
 if (!admin.apps.length) {
-  admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-  });
+  admin.initializeApp(config);
 }
 
 export const db = admin.firestore();
