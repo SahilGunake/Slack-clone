@@ -20,10 +20,6 @@ export const verifyToken = async (req, res, next) => {
   }
 };
 
-
-// Dev 2
-// This function is used to create or fetch a user in Firestore 
-
 /**
  * Create or fetch user from Firestore on successful login.
  */
