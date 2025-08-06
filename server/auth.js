@@ -20,7 +20,7 @@ export const verifyToken = async (req, res, next) => {
   }
 };
 
-// agam changes
+
 // Dev 2
 // This function is used to create or fetch a user in Firestore 
 
